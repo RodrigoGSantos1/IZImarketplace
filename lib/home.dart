@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                   ),),
 
                   TextField(
-                    
+
                   ),
                   TextField(
                   keyboardType: TextInputType.emailAddress,
