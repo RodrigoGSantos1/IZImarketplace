@@ -352,6 +352,58 @@ class _ProdutosState extends State<Produtos> {
               child: _formsIndex == 1 ? Comentarios() : Descricao(),
             ),
           ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 45, bottom: 50, top: 30),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(30),
+                        topLeft: Radius.circular(30)),
+                    color: Colors.amber,
+                  ),
+                  height: 45,
+                  child: MaterialButton(
+                    padding: EdgeInsets.only(left: 50, right: 50),
+                    onPressed: () {},
+                    child: Text(
+                      "Chat",
+                      style: GoogleFonts.montserrat(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 10, bottom: 50, top: 30),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(30),
+                        topRight: Radius.circular(30)),
+                    color: Colors.amber,
+                  ),
+                  height: 45,
+                  child: MaterialButton(
+                    padding: EdgeInsets.only(left: 50, right: 50),
+                    onPressed: () {},
+                    child: Text(
+                      "Ligar",
+                      style: GoogleFonts.montserrat(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          )
         ]),
       ),
     );
